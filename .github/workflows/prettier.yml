@@ -1,9 +1,9 @@
 name: prettier
-on: [push]
+on: [pull_request]
 permissions: {}
 jobs:
   prettier:
-    runs-on: macos-14
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v4
         with:
