@@ -25,6 +25,12 @@
     "typecheck": "tsc --noEmit",
     "posttypecheck": "echo 'typecheck is done'"
   },
+  "lint-staged": {
+    "*.{ts,js,vue}": [
+      "npm run lintOnly",
+      "npm run prettierCheck"
+    ]
+  },
   "dependencies": {
     "@fontsource/inter": "^5.2.5",
     "@maikovskii-danil/ui-framework-vue": "^3.0.3",
@@ -48,6 +54,7 @@
     "eslint-plugin-vue": "~10.2.0",
     "globals": "~16.2.0",
     "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "prettier": "^3.5.3",
     "rollup-plugin-visualizer": "^6.0.3",
     "typescript": "~5.8.0",
