@@ -1,6 +1,6 @@
 name: Merge Blocker
 
-on: [push, pull_request]
+on: [push]
 
 permissions: {}
 
@@ -60,5 +60,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install dependencies
         run: npm ci --audit false --fund false
-      - name: TypeScript check
+      - name: TypeScript Check
         run: npm run typecheck
