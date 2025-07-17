@@ -6,6 +6,7 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky",
     "prestart": "npm clean-install --fund false; npx kill-port 5173",
     "start": "vite --port 5173",
     "prepreview": "npm clean-install --fund false; vite build --sourcemap; npx kill-port 5174",
@@ -20,11 +21,13 @@
     "prelint": "npm clean-install --fund false --audit false",
     "lint": "npm run lintOnly",
     "lintOnly": "eslint --config ./eslint.config.js",
-    "postlintOnly": "echo 'lint is done'"
+    "postlintOnly": "echo 'lint is done'",
+    "typecheck": "tsc --noEmit",
+    "posttypecheck": "echo 'typecheck is done'"
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.5",
-    "@maikovskii-danil/ui-framework-vue": "^2.1.3",
+    "@maikovskii-danil/ui-framework-vue": "^3.0.2",
     "@vueuse/core": "^13.2.0",
     "currency.js": "^2.0.4",
     "pinia": "^3.0.2",
