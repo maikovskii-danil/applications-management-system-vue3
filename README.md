@@ -36,10 +36,9 @@
 
 ❗ Windows is **not officially supported**
 
-💡 However, you can try running it on Windows:
+💡 However, you can try running it on Windows (just change `os` field in `package.json`):
 
 ```json
-// In package.json
 {
   "os": ["darwin", "linux", "win32"]
 }
