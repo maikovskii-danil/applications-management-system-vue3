@@ -1,9 +1,13 @@
-# 🌗 Pet-проект на Vue: Демо UI + Honeypot
+# 🌗 Vue Pet Project: Demo UI + Honeypot
 
-###### [Ссылка на Vercel деплой](https://applications-management-system-vue3.vercel.app/)
+> A frontend showcase with fake authorization, UI components, and hand-crafted dev setup.
 
-![Светлая тема](./screenshots/light.png)
-![Тёмная тема](./screenshots/dark.png)
+🔗 [Live on Vercel](https://applications-management-system-vue3.vercel.app/)
+
+![Light theme](./screenshots/light.png)
+![Dark theme](./screenshots/dark.png)
+
+---
 
 ## 🧰 Stack
 
@@ -12,63 +16,63 @@
 - Pinia
 - TypeScript
 - Vite
-- TailwindCSS + тёмная/светлая тема
+- Tailwind CSS (dark/light themes)
 - ESLint, Prettier
-- GitHub Actions + Vercel (деплой)
+- GitHub Actions + Vercel
 
 ## ⚙️ Features
 
-- Ручная настройка Vite
-- Honeypot `.env.fake` доступен по прямой ссылке
-- Собственный [ui framework](https://www.npmjs.com/package/@maikovskii-danil/ui-framework-vue)
-- ESLint + Prettier (ручная конфигурация)
+- Manual Vite setup
+- Honeypot `.env.fake` file available by direct URL
+- Custom [UI framework](https://www.npmjs.com/package/@maikovskii-danil/ui-framework-vue)
+- Manually configured ESLint + Prettier
 
-## 🛠 About Enviroment
+## 🛠️ Environment
 
-🖥️ Проект разработан и протестирован для macOS/linux для Chrome (Рекомендованная ширина экрана: 1440px)
+🖥️ Developed and tested on macOS/Linux (Chrome)
 
-⚙️ Node.js: 22.17.0
+⚙️ Node.js: `22.17.0`  
+📦 npm: `11.4.2`
 
-📦 npm: 11.4.2
+❗ Windows is **not officially supported**
 
-❗ Поддержка Windows не гарантируется
-
-##### Но Вы можете попробовать его запустить на Windows.
-
-##### Для этого удалите поле "os" в package.json или измените на значение ниже:
+💡 However, you can try running it on Windows:
 
 ```json
+// In package.json
 {
   "os": ["darwin", "linux", "win32"]
 }
 ```
 
-##### После запустите `npm install`
+##### Then run `npm install`
 
-## 🔐 Авторизация
+## 🔐 Authorization
 
-Авторизация работает с фейковыми учётными данными (имитация входа).
+Fake login flow with mock credentials:
 
 - Email: `some.user@automation.testing`
 - Password: `123456`
 
-### Project Setup & Compile and Hot-Reload for Development
+## 🧪 Project Setup & Development
 
 ```sh
 npm start
 ```
 
-###### Перед `"start"` npm запустит `npm clean-install`
+###### Runs `clean-install` before launch
 
-### Project Setup, Compile and Minify for Production
+## 🏗️ Production Build
 
 ```sh
 npm run build
 ```
 
-###### Перед `"build"` npm запустит `npm clean-install`
+###### Also runs `clean-install` before building
 
-###### Если что-то заинтересовало — можете написать мне.
+## 🧃 Need help?
+
+#### Feel free to reach out:
 
 - maikovsky.danil@gmail.com
 - Telegram: [@danilmaikovsky](https://t.me/danilmaikovsky)
