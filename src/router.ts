@@ -8,10 +8,10 @@ import type { Component } from 'vue';
 
 import useUserStore from './stores/user';
 
-const pages = import.meta.glob('./views/*.vue', { eager: true }) as Record<
-  string,
-  { default: Component }
->;
+const pages: Record<string, { default: Component }> = import.meta.glob(
+  './views/*.vue',
+  { eager: true },
+);
 
 const pageMeta = {
   applications: {

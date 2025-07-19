@@ -75,9 +75,10 @@ export const REGISTERED_USERS_DATA: TUserData[] = [
   },
 ];
 
-export const REGISTERED_USERS_DATA_MAP = REGISTERED_USERS_DATA.reduce(
-  (acc, user) => ({ ...acc, [user.email]: user }),
-  {} as Record<string, TUserData>,
-);
+export const REGISTERED_USERS_DATA_MAP: Record<string, TUserData> =
+  REGISTERED_USERS_DATA.reduce(
+    (acc, user) => ({ ...acc, [user.email]: user }),
+    {},
+  );
 
 export const DEBOUNCE_DELAY = 300;
