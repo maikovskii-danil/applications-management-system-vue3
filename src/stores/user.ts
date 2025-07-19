@@ -9,7 +9,7 @@ import type { TUserData } from '@/types';
 const useUserStore = defineStore('user', () => {
   const router = useRouter();
 
-  const currentUser = useStorage('user-storage', {
+  const currentUser = useStorage<TUserData>('user-storage', {
     email: '',
     password: '',
   });
