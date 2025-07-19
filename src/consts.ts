@@ -1,20 +1,20 @@
 import type { IApplication, TApplicationStatus, TUserData } from './types';
 
-export const APPLICATION_STATUS_OPTIONS: Array<{
-  id: TApplicationStatus;
-  displayName: string;
-}> = [
+export const APPLICATION_STATUS_OPTIONS = [
   { id: 'active', displayName: 'Активен' },
   { id: 'completed', displayName: 'Завершен' },
   { id: 'in_progress', displayName: 'Выполняется' },
   { id: 'rejected', displayName: 'Отменен' },
-];
+] satisfies Array<{
+  id: TApplicationStatus;
+  displayName: string;
+}>;
 
 export const APPLICATION_STATUSES_SET = new Set<TApplicationStatus>(
   APPLICATION_STATUS_OPTIONS.map((option) => option.id),
 );
 
-export const INITIAL_APPLICATIONS: IApplication[] = [
+export const INITIAL_APPLICATIONS = [
   {
     id: '1',
     name: 'Vladilen',
@@ -64,16 +64,16 @@ export const INITIAL_APPLICATIONS: IApplication[] = [
     amount: 1234,
     status: 'completed',
   },
-];
+] satisfies IApplication[];
 
 export const INITIAL_LAST_ID = Number(INITIAL_APPLICATIONS.at(-1)?.id ?? 0);
 
-export const REGISTERED_USERS_DATA: TUserData[] = [
+export const REGISTERED_USERS_DATA = [
   {
     email: 'some.user@automation.testing',
     password: '123456',
   },
-];
+] satisfies TUserData[];
 
 export const REGISTERED_USERS_DATA_MAP: Record<string, TUserData> =
   REGISTERED_USERS_DATA.reduce(
