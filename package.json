@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.5",
-    "@maikovskii-danil/ui-framework-vue": "^3.0.3",
+    "@maikovskii-danil/ui-framework-vue": "^3.0.4",
     "@vueuse/core": "^13.5.0",
     "currency.js": "^2.0.4",
     "pinia": "^3.0.2",
