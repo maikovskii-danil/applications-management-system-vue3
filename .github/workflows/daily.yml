@@ -1,4 +1,4 @@
-name: Telegram Audit
+name: Telegram Report
 
 on:
   schedule:
@@ -6,7 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  audit:
+  telegram-audit:
+    name: Telegram Audit
     runs-on: ubuntu-latest
     outputs:
       node-version: '22.17.0'
