@@ -19,7 +19,6 @@ jobs:
       - name: Install specific npm version
         run: npm install --audit false --fund false -g npm@11.4.2
 
-    steps:
       - uses: actions/checkout@v4
 
       - name: Run npm audit and save report
