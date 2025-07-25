@@ -1,4 +1,4 @@
-# 🌗 Vue Pet Project: Demo UI + Honeypot
+# 🌗 Vue Pet Project: Demo UI
 
 > A frontend showcase with fake authorization, UI components, and hand-crafted dev setup.
 
@@ -23,7 +23,6 @@
 ## ⚙️ Features
 
 - Manual Vite setup
-- Honeypot `.env.fake` file available by direct URL
 - Custom [UI framework](https://www.npmjs.com/package/@maikovskii-danil/ui-framework-vue)
 - Manually configured ESLint + Prettier
 
