@@ -31,19 +31,15 @@
 🖥️ Developed and tested on macOS/Linux (Chrome)
 
 ⚙️ Node.js: `22.17.0`  
-📦 npm: `11.4.2`
+📦 npm: `11.4.2`  
+🐳 Docker: `version 28.3.2, build 578ccf6`
 
 ❗ Windows is **not officially supported**
 
-💡 However, you can try running it on Windows (just change `os` field in `package.json`):
+💡 However, you can try running it on Windows (by Docker 🐳):
 
-```json
-{
-  "os": ["darwin", "linux", "win32"]
-}
-```
-
-##### Then run `npm install`
+- Dev image: `npm run docker:dev`
+- Preview image: `npm run docker:preview`
 
 ## 🔐 Authorization
 
