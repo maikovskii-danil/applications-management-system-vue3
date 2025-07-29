@@ -29,15 +29,15 @@ export default defineConfig(({ mode }) => ({
   envPrefix: 'APP_',
   appType: 'spa',
   server: {
-    host: false,
+    host: '0.0.0.0',
     port: 5173,
     strictPort: true,
-    open: true,
+    open: false,
   },
   preview: {
     host: '0.0.0.0',
     port: 5174,
     strictPort: true,
-    open: true,
+    open: false,
   },
 }));
