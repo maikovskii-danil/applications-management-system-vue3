@@ -3,7 +3,7 @@ WORKDIR /usr/local/app
 RUN npm install --audit false --fund false -g npm@11.4.2
 COPY ./package.json .
 COPY ./package-lock.json .
-RUN npm ci --audit false --fund false
+RUN npm ci --ignore-scripts --audit false --fund false
 COPY . .
 RUN npx vite build --sourcemap
 EXPOSE 5174
